@@ -53,22 +53,37 @@ A Full Stack User Management System built using React, FastAPI, and MySQL. The a
 
 ## Project Structure
 
-```text
+## Project Structure
+
+```text id="8w1vqz"
 UserManagementSystem/
 
 ├── backend/
+│   ├── auth.py
+│   ├── database.py
+│   ├── login_schema.py
 │   ├── main.py
 │   ├── models.py
-│   ├── database.py
-│   ├── auth.py
 │   ├── schemas.py
-│   ├── login_schema.py
+│   ├── test_db.py
 │   └── requirements.txt
 │
 ├── frontend/
+│   ├── public/
 │   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   │
 │   ├── package.json
-│   └── vite.config.js
+│   ├── package-lock.json
+│   ├── vite.config.js
+│   ├── index.html
+│   └── eslint.config.js
 │
 ├── screenshots/
 │   ├── signup.jpeg
@@ -76,10 +91,10 @@ UserManagementSystem/
 │   ├── dashboard.jpeg
 │   └── profile.jpeg
 │
+├── .gitignore
 └── README.md
 ```
 
----
 
 ## Installation
 
