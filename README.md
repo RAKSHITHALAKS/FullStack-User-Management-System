@@ -55,7 +55,7 @@ A Full Stack User Management System built using React, FastAPI, and MySQL. The a
 
 ## Project Structure
 
-```text id="8w1vqz"
+```text id="bk83xn"
 UserManagementSystem/
 
 ├── backend/
@@ -65,8 +65,7 @@ UserManagementSystem/
 │   ├── main.py
 │   ├── models.py
 │   ├── schemas.py
-│   ├── test_db.py
-│   └── requirements.txt
+│   └── test_db.py
 │
 ├── frontend/
 │   ├── public/
@@ -94,6 +93,7 @@ UserManagementSystem/
 ├── .gitignore
 └── README.md
 ```
+
 
 
 ## Installation
