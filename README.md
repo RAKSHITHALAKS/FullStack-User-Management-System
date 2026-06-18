@@ -2,21 +2,24 @@
 
 ## Overview
 
-A Full Stack User Management System built using React, FastAPI, and MySQL. The application provides secure user registration, login authentication, profile management, and dashboard functionality with a clean and responsive user interface.
+A Full Stack User Management System built using React, FastAPI, and MySQL. The application provides secure user registration, login authentication, profile management, and dashboard functionality through a responsive and user-friendly interface.
+
+---
 
 ## Features
 
 * User Registration
 * User Login Authentication
 * Password Hashing using bcrypt
-* JWT Token Generation
 * User Profile Management
-* Protected Routes
 * Dashboard View
-* Member Since Information
 * Responsive UI
 * MySQL Database Integration
 * RESTful API Architecture
+* Form Validation
+* Error Handling
+
+---
 
 ## Tech Stack
 
@@ -39,46 +42,42 @@ A Full Stack User Management System built using React, FastAPI, and MySQL. The a
 
 * MySQL
 
-### Authentication
+### Authentication & Security
 
-* JWT (JSON Web Token)
-* bcrypt Password Hashing
+* Password Hashing using bcrypt
+* Secure Password Storage
+* Input Validation
+* Error Handling
 
 ---
 
 ## Project Structure
 
+```text
 UserManagementSystem/
 
 ├── backend/
-
-│ ├── main.py
-
-│ ├── models.py
-
-│ ├── database.py
-
-│ ├── auth.py
-
-│ ├── schemas.py
-
-│ ├── login_schema.py
-
-│ └── requirements.txt
-
+│   ├── main.py
+│   ├── models.py
+│   ├── database.py
+│   ├── auth.py
+│   ├── schemas.py
+│   ├── login_schema.py
+│   └── requirements.txt
 │
-
 ├── frontend/
-
-│ ├── src/
-
-│ ├── package.json
-
-│ └── vite.config.js
-
+│   ├── src/
+│   ├── package.json
+│   └── vite.config.js
 │
-
+├── screenshots/
+│   ├── signup.jpeg
+│   ├── login.jpeg
+│   ├── dashboard.jpeg
+│   └── profile.jpeg
+│
 └── README.md
+```
 
 ---
 
@@ -120,7 +119,7 @@ http://localhost:5173
 
 ## API Endpoints
 
-### Signup
+### User Registration
 
 ```http
 POST /signup
@@ -136,9 +135,7 @@ Request:
 }
 ```
 
----
-
-### Login
+### User Login
 
 ```http
 POST /login
@@ -153,9 +150,7 @@ Request:
 }
 ```
 
----
-
-### Profile
+### Fetch User Profile
 
 ```http
 GET /profile/{email}
@@ -180,15 +175,79 @@ GET /profile/{email}
 ## Security Features
 
 * Password Hashing using bcrypt
-* JWT-based Authentication
-* Protected Frontend Routes
+* Secure Password Storage
 * Input Validation
 * Error Handling
+* Form Validation
+
+---
+
+## Application Screenshots
+
+### Signup Page
+
+![Signup](screenshots/signup.jpeg)
+
+### Login Page
+
+![Login](screenshots/login.jpeg)
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.jpeg)
+
+### Profile Page
+
+![Profile](screenshots/profile.jpeg)
+
+---
+
+## Assumptions
+
+* Each user account is uniquely identified using an email address.
+* Passwords must contain at least 6 characters.
+* The application is intended for demonstration purposes and uses a local MySQL database.
+* User profile information is accessible after successful login.
+* The Member Since field stores the account creation period.
+
+---
+
+## AI-Assisted Development
+
+This project was developed using AI-assisted development practices to accelerate implementation and improve productivity.
+
+AI assistance was utilized for:
+
+* Generating initial code structures
+* Backend API development
+* Frontend component creation
+* Authentication workflow implementation
+* Database integration
+* Debugging and troubleshooting
+* UI enhancements
+* Documentation preparation
+
+All generated suggestions were reviewed, tested, modified, and integrated manually to ensure correctness and compliance with project requirements.
+
+---
+
+## Challenges Encountered
+
+During development, the following challenges were encountered:
+
+1. Integrating the React frontend with the FastAPI backend and ensuring proper API communication.
+2. Configuring MySQL connectivity and managing user data using SQLAlchemy ORM.
+3. Implementing secure password hashing using bcrypt.
+4. Managing user sessions and frontend route protection.
+5. Designing a clean and responsive user interface while maintaining a scalable project structure.
+
+These challenges were resolved through testing, debugging, documentation review, and iterative improvements.
 
 ---
 
 ## Future Enhancements
 
+* Complete JWT-Protected Backend Routes
 * Password Reset Functionality
 * Email Verification
 * User Roles and Permissions
@@ -198,8 +257,16 @@ GET /profile/{email}
 
 ---
 
+## Conclusion
+
+The User Management System successfully implements user registration, login, profile management, secure password storage, and MySQL database integration. The project demonstrates full-stack development skills including frontend development, backend API design, database management, authentication, and responsive UI development.
+
+---
+
 ## Author
 
 Rakshitha C
+
 RV Institute of Technology and Management
+
 Bangalore, India
